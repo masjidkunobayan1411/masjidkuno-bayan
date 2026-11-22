@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient: Skyline Royal Blue -->
+    <linearGradient id="logoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="50%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+    <!-- Gold Gradient for Cultural Accents -->
+    <linearGradient id="logoGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Rounded Base Badge -->
+  <rect x="10" y="10" width="180" height="180" rx="44" fill="url(#logoBg)" stroke="#3b82f6" stroke-width="4" filter="url(#shadow)" />
+
+  <!-- Traditional Mosque Silhouette (Masjid Kuno Bayan Architecture) -->
+  <g transform="translate(100, 105)">
+    <!-- Base Platform Stone Mound -->
+    <polygon points="-55,48 55,48 60,54 -60,54" fill="#94a3b8" />
+
+    <!-- Wooden Foundation Stilts -->
+    <rect x="-42" y="36" width="6" height="12" fill="url(#logoGold)" />
+    <rect x="-3" y="36" width="6" height="12" fill="url(#logoGold)" />
+    <rect x="36" y="36" width="6" height="12" fill="url(#logoGold)" />
+
+    <!-- Woven Bamboo Walls -->
+    <rect x="-45" y="16" width="90" height="22" rx="2" fill="#ffffff" opacity="0.95" />
+    <!-- Entry Doorway -->
+    <rect x="-8" y="20" width="16" height="18" rx="2" fill="#1e3a8a" />
+
+    <!-- Lower Thatched Roof Tier (Atap Bawah) -->
+    <polygon points="0,-12 65,16 -65,16" fill="url(#logoGold)" />
+    <line x1="-65" y1="16" x2="65" y2="16" stroke="#b45309" stroke-width="2" />
+
+    <!-- Upper Thatched Tier (Atap Tumpang Tingkat Dua) -->
+    <polygon points="0,-36 40,-10 -40,-10" fill="url(#logoGold)" />
+    <line x1="-40" y1="-10" x2="40" y2="-10" stroke="#b45309" stroke-width="2" />
+
+    <!-- Traditional Finial Apex Crown (Puncak Mahkota Bayan) -->
+    <polygon points="0,-48 -3,-36 3,-36" fill="#fef08a" />
+    <circle cx="0" cy="-48" r="3.5" fill="#fef08a" />
+  </g>
+
+  <!-- Four Stars/Accents (Bayan Heritage Symbol) -->
+  <circle cx="45" cy="45" r="3" fill="#93c5fd" opacity="0.7" />
+  <circle cx="155" cy="45" r="3" fill="#93c5fd" opacity="0.7" />
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#bae6fd" />
+    </linearGradient>
+    <linearGradient id="hillGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#15803d" />
+      <stop offset="100%" stop-color="#14532d" />
+    </linearGradient>
+    <linearGradient id="roofIjuk" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#292524" />
+      <stop offset="50%" stop-color="#1c1917" />
+      <stop offset="100%" stop-color="#0c0a09" />
+    </linearGradient>
+    <linearGradient id="bambooWall" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="600" fill="url(#skyGrad)" />
+
+  <!-- Hills & Greenery -->
+  <path d="M 0 380 Q 250 290 500 360 T 800 340 L 800 600 L 0 600 Z" fill="url(#hillGrad)" />
+
+  <!-- Mosque Foundation (Batu Kali Alam) -->
+  <g transform="translate(150, 180)">
+    <!-- Base Platform Raised Mound -->
+    <polygon points="50,280 450,280 480,310 20,310" fill="#44403c" />
+    <polygon points="20,310 480,310 500,340 0,340" fill="#292524" />
+
+    <!-- Wooden Foundation Stilts -->
+    <rect x="70" y="240" width="16" height="40" fill="#78350f" />
+    <rect x="242" y="240" width="16" height="40" fill="#78350f" />
+    <rect x="414" y="240" width="16" height="40" fill="#78350f" />
+
+    <!-- Woven Bamboo Walls (Bilik Anyaman Bambu) -->
+    <rect x="60" y="150" width="380" height="90" fill="url(#bambooWall)" stroke="#78350f" stroke-width="2" />
+    <!-- Door -->
+    <rect x="225" y="170" width="50" height="70" rx="3" fill="#451a03" />
+
+    <!-- Lower Thatched Roof (Atap Ijuk Bawah) -->
+    <polygon points="250,50 490,160 10,160" fill="url(#roofIjuk)" />
+    
+    <!-- Upper Thatched Tier Roof (Atap Tumpang Tingkat Dua) -->
+    <polygon points="250,-20 400,60 100,60" fill="url(#roofIjuk)" />
+    
+    <!-- Crown Finial (Puncak Mahkota Tradisional Bayan) -->
+    <polygon points="250,-45 245,-20 255,-20" fill="#d97706" />
+    <circle cx="250" cy="-45" r="5" fill="#f59e0b" />
+  </g>
+
+  <!-- Trees & Palm Accents -->
+  <circle cx="90" cy="350" r="45" fill="#166534" />
+  <circle cx="700" cy="340" r="55" fill="#166534" />
+  <circle cx="740" cy="360" r="40" fill="#14532d" />
+
+</svg>
