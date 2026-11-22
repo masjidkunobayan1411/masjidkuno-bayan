@@ -699,7 +699,7 @@ export default function KasirPembayaranPage() {
                   <span>
                     Barcode aktif: <strong>{qrisVariant === "QRIS BAYANNESIA" ? "Payment QRIS BAYANNESIA" : "Payment QRIS BUMDES BAYAN"}</strong> (
                     <code className="font-mono font-bold text-blue-600 dark:text-blue-400">
-                      public/media/qris/{qrisVariant === "QRIS BAYANNESIA" ? "qris-bayannesia.png" : "qris-bumdes.png"}
+                      public/media/qris/{qrisVariant === "QRIS BAYANNESIA" ? "qris-bayannesia.jpg" : "qris-bumdes.jpg"}
                     </code>)
                   </span>
                 </div>
@@ -729,8 +729,8 @@ export default function KasirPembayaranPage() {
                         const target = e.currentTarget;
                         target.src =
                           qrisVariant === "QRIS BAYANNESIA"
-                            ? "/media/qris/qris-bayannesia.png"
-                            : "/media/qris/qris-bumdes.png";
+                            ? "/media/qris/qris-bayannesia.jpg"
+                            : "/media/qris/qris-bumdes.jpg";
                       }}
                       alt={qrisVariant}
                       className="w-full h-auto max-h-[300px] object-contain mx-auto rounded-xl shadow-xs group-hover:scale-102 transition-transform"
@@ -855,8 +855,8 @@ export default function KasirPembayaranPage() {
                   const target = e.currentTarget;
                   target.src =
                     qrisVariant === "QRIS BAYANNESIA"
-                      ? "/media/qris/qris-bayannesia.png"
-                      : "/media/qris/qris-bumdes.png";
+                      ? "/media/qris/qris-bayannesia.jpg"
+                      : "/media/qris/qris-bumdes.jpg";
                 }}
                 alt={qrisVariant}
                 className="w-full max-h-[460px] object-contain mx-auto rounded-lg"
