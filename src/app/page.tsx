@@ -98,11 +98,11 @@ export default function HomePage() {
       <header className="sticky top-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-100 dark:border-slate-800 shadow-xs transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
-            {/* Logo Kustom & Brand Identity (Bisa Diubah via public/media/logo/logo.png) */}
+            {/* Logo Kustom & Brand Identity (Bisa Diubah via public/media/logo/logo.jpg) */}
             <Link href="/" className="flex items-center gap-3.5 group">
               <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-blue-600 via-bayan-800 to-bayan-900 border border-blue-500/60 flex items-center justify-center p-1.5 shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform overflow-hidden">
                 <img
-                  src="/media/logo/logo.png"
+                  src="/media/logo/logo.jpg"
                   onError={(e) => {
                     e.currentTarget.src = "/media/logo/logo.svg";
                   }}
@@ -1120,7 +1120,7 @@ export default function HomePage() {
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-2xl bg-blue-600 border border-blue-500 flex items-center justify-center p-1.5 shadow-md overflow-hidden">
                   <img
-                    src="/media/logo/logo.png"
+                    src="/media/logo/logo.jpg"
                     onError={(e) => {
                       e.currentTarget.src = "/media/logo/logo.svg";
                     }}
