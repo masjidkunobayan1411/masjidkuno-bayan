@@ -313,12 +313,12 @@ export default function PengaturanPage() {
       key: "qris-bayannesia",
       title: "Barcode QRIS BAYANNESIA (Kain Poleng)",
       category: "Kasir Pembayaran",
-      filename: "qris-bayannesia.png",
+      filename: "qris-bayannesia.jpg",
       folder: "public/media/qris/",
-      fullPath: "d:\\BAYNEX\\public\\media\\qris\\qris-bayannesia.png",
+      fullPath: "d:\\BAYNEX\\public\\media\\qris\\qris-bayannesia.jpg",
       folderPath: "d:\\BAYNEX\\public\\media\\qris\\",
       src: "/api/media/custom/qris-bayannesia",
-      fallback: "/media/qris/qris-bayannesia.png",
+      fallback: "/media/qris/qris-bayannesia.jpg",
       desc: "Barcode Payment QRIS resmi Bayannesia khusus untuk pembayaran sewa Kain Poleng",
       locationLabel: "Kasir: Pembayaran QRIS BAYANNESIA (Kain Poleng)",
       siteUrl: "/dashboard/transaksi",
@@ -327,12 +327,12 @@ export default function PengaturanPage() {
       key: "qris-bumdes",
       title: "Barcode QRIS BUMDES BAYAN (Kain Batik)",
       category: "Kasir Pembayaran",
-      filename: "qris-bumdes.png",
+      filename: "qris-bumdes.jpg",
       folder: "public/media/qris/",
-      fullPath: "d:\\BAYNEX\\public\\media\\qris\\qris-bumdes.png",
+      fullPath: "d:\\BAYNEX\\public\\media\\qris\\qris-bumdes.jpg",
       folderPath: "d:\\BAYNEX\\public\\media\\qris\\",
       src: "/api/media/custom/qris-bumdes",
-      fallback: "/media/qris/qris-bumdes.png",
+      fallback: "/media/qris/qris-bumdes.jpg",
       desc: "Barcode Payment QRIS resmi BUMDes Bayan khusus untuk pembayaran sewa Kain Batik",
       locationLabel: "Kasir: Pembayaran QRIS BUMDES BAYAN (Kain Batik)",
       siteUrl: "/dashboard/transaksi",
@@ -341,9 +341,9 @@ export default function PengaturanPage() {
       key: "logo",
       title: "Logo Utama Website",
       category: "Identitas Brand",
-      filename: "logo.png",
+      filename: "logo.jpg",
       folder: "public/media/logo/",
-      fullPath: "d:\\BAYNEX\\public\\media\\logo\\logo.png",
+      fullPath: "d:\\BAYNEX\\public\\media\\logo\\logo.jpg",
       folderPath: "d:\\BAYNEX\\public\\media\\logo\\",
       src: "/api/media/custom/logo",
       fallback: "/media/logo/logo.svg",
@@ -655,13 +655,13 @@ export default function PengaturanPage() {
                   }`}
                   onError={(e) => {
                     const target = e.currentTarget;
-                    target.src = "/media/qris/qris-bayannesia.png";
+                    target.src = "/media/qris/qris-bayannesia.jpg";
                   }}
                   alt="Preview QRIS BAYANNESIA"
                   className="w-36 h-auto max-h-48 mx-auto object-contain rounded-lg shadow-xs"
                 />
                 <code className="text-[10px] text-slate-500 font-mono block mt-2">
-                  public/media/qris/qris-bayannesia.png
+                  public/media/qris/qris-bayannesia.jpg
                 </code>
               </div>
             </div>
@@ -691,13 +691,13 @@ export default function PengaturanPage() {
                   }`}
                   onError={(e) => {
                     const target = e.currentTarget;
-                    target.src = "/media/qris/qris-bumdes.png";
+                    target.src = "/media/qris/qris-bumdes.jpg";
                   }}
                   alt="Preview QRIS BUMDES BAYAN"
                   className="w-36 h-auto max-h-48 mx-auto object-contain rounded-lg shadow-xs"
                 />
                 <code className="text-[10px] text-slate-500 font-mono block mt-2">
-                  public/media/qris/qris-bumdes.png
+                  public/media/qris/qris-bumdes.jpg
                 </code>
               </div>
             </div>
@@ -706,7 +706,7 @@ export default function PengaturanPage() {
           <div className="p-3.5 rounded-2xl bg-blue-50/80 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800 text-blue-900 dark:text-blue-300 text-xs space-y-1">
             <span className="font-bold block">Cara Mengganti Barcode Masing-Masing QRIS:</span>
             <p className="text-[11px] text-blue-800 dark:text-blue-300 leading-relaxed">
-              Anda dapat memperbarui barcode QRIS masing-masing kapan saja menggunakan tombol <strong>"Ganti Foto"</strong> pada bagian <strong>Pengelolaan Seluruh Foto &amp; Media Website</strong> di bawah, atau dengan menyalin file gambar ke folder <code>public/media/qris/</code> dengan nama <code>qris-bayannesia.png</code> dan <code>qris-bumdes.png</code>.
+              Anda dapat memperbarui barcode QRIS masing-masing kapan saja menggunakan tombol <strong>"Ganti Foto"</strong> pada bagian <strong>Pengelolaan Seluruh Foto &amp; Media Website</strong> di bawah, atau dengan menyalin file gambar ke folder <code>public/media/qris/</code> dengan nama <code>qris-bayannesia.jpg</code> dan <code>qris-bumdes.jpg</code>.
             </p>
           </div>
         </div>
