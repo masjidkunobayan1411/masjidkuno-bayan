@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 850" width="100%" height="100%">
+  <defs>
+    <linearGradient id="danaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#118EEA" />
+      <stop offset="100%" stop-color="#0E77C6" />
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-5%" width="120%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="600" height="850" fill="#f8fafc" rx="32" />
+
+  <!-- Outer Card Container -->
+  <g filter="url(#cardShadow)">
+    <rect x="30" y="30" width="540" height="790" fill="#ffffff" rx="24" stroke="#e2e8f0" stroke-width="2" />
+  </g>
+
+  <!-- Top Red/White Line (Indonesian Heritage) -->
+  <path d="M 30 54 Q 30 30 54 30 L 546 30 Q 570 30 570 54 L 570 42 L 30 42 Z" fill="#DC2626" />
+
+  <!-- Official QRIS Header -->
+  <g transform="translate(60, 60)">
+    <!-- QRIS Logo Block -->
+    <text x="0" y="42" font-family="'Arial Black', sans-serif" font-weight="900" font-size="38" fill="#1e293b" letter-spacing="-1.5">QRIS</text>
+    <rect x="110" y="16" width="3" height="32" fill="#cbd5e1" />
+    <text x="125" y="30" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#64748b" letter-spacing="1">STANDAR PEMBAYARAN NASIONAL</text>
+    <text x="125" y="46" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">BANK INDONESIA &amp; ASPI</text>
+
+    <!-- GPN Logo -->
+    <rect x="420" y="14" width="60" height="34" rx="6" fill="#DC2626" />
+    <text x="450" y="36" font-family="'Arial Black', sans-serif" font-weight="900" font-size="16" fill="#ffffff" text-anchor="middle">GPN</text>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="60" y1="125" x2="540" y2="125" stroke="#f1f5f9" stroke-width="2" />
+
+  <!-- Merchant Information & DANA Bisnis Header -->
+  <g transform="translate(60, 140)">
+    <!-- Merchant Name -->
+    <text x="240" y="24" font-family="'Georgia', serif" font-weight="bold" font-size="24" fill="#0f172a" text-anchor="middle" letter-spacing="-0.5">
+      MASJID KUNO BAYAN
+    </text>
+    <text x="240" y="46" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#475569" text-anchor="middle">
+      PENGELOLA CAGAR BUDAYA DESA BAYAN
+    </text>
+    <text x="240" y="66" font-family="monospace" font-size="12" font-weight="bold" fill="#64748b" text-anchor="middle">
+      NMID : ID1020083928172 • A01
+    </text>
+
+    <!-- DANA Banner Badge -->
+    <g transform="translate(140, 85)">
+      <rect x="0" y="0" width="200" height="36" rx="18" fill="url(#danaGrad)" />
+      <circle cx="24" cy="18" r="10" fill="#ffffff" />
+      <text x="24" y="23" font-family="'Arial Black', sans-serif" font-size="13" font-weight="900" fill="#118EEA" text-anchor="middle">D</text>
+      <text x="110" y="23" font-family="'Arial Black', sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">DANA Bisnis</text>
+    </g>
+  </g>
+
+  <!-- QR Code Section -->
+  <g transform="translate(130, 290)">
+    <!-- QR Box Border -->
+    <rect x="-10" y="-10" width="360" height="360" fill="#ffffff" rx="20" stroke="#0f172a" stroke-width="4" />
+
+    <!-- Corner Finder Patterns (Top-Left) -->
+    <rect x="15" y="15" width="70" height="70" fill="#0f172a" rx="12" />
+    <rect x="27" y="27" width="46" height="46" fill="#ffffff" rx="8" />
+    <rect x="37" y="37" width="26" height="26" fill="#118EEA" rx="4" />
+
+    <!-- Corner Finder Patterns (Top-Right) -->
+    <rect x="255" y="15" width="70" height="70" fill="#0f172a" rx="12" />
+    <rect x="267" y="27" width="46" height="46" fill="#ffffff" rx="8" />
+    <rect x="277" y="37" width="26" height="26" fill="#118EEA" rx="4" />
+
+    <!-- Corner Finder Patterns (Bottom-Left) -->
+    <rect x="15" y="255" width="70" height="70" fill="#0f172a" rx="12" />
+    <rect x="27" y="267" width="46" height="46" fill="#ffffff" rx="8" />
+    <rect x="37" y="277" width="26" height="26" fill="#118EEA" rx="4" />
+
+    <!-- QR Data Matrix Pixels (Decorative SVG Pattern) -->
+    <g fill="#0f172a">
+      <!-- Timing Pattern Horizontal & Vertical -->
+      <rect x="95" y="42" width="14" height="14" />
+      <rect x="125" y="42" width="14" height="14" />
+      <rect x="155" y="42" width="14" height="14" />
+      <rect x="185" y="42" width="14" height="14" />
+      <rect x="215" y="42" width="14" height="14" />
+
+      <rect x="42" y="95" width="14" height="14" />
+      <rect x="42" y="125" width="14" height="14" />
+      <rect x="42" y="155" width="14" height="14" />
+      <rect x="42" y="185" width="14" height="14" />
+      <rect x="42" y="215" width="14" height="14" />
+
+      <!-- Center Data Blocks -->
+      <rect x="100" y="100" width="30" height="20" rx="3" />
+      <rect x="140" y="95" width="20" height="35" rx="3" />
+      <rect x="180" y="110" width="40" height="15" rx="3" />
+      <rect x="240" y="95" width="35" height="30" rx="3" />
+      <rect x="290" y="100" width="25" height="25" rx="3" />
+
+      <rect x="95" y="145" width="25" height="40" rx="3" />
+      <rect x="235" y="145" width="30" height="35" rx="3" />
+      <rect x="280" y="140" width="40" height="20" rx="3" />
+
+      <rect x="95" y="200" width="35" height="25" rx="3" />
+      <rect x="145" y="210" width="40" height="20" rx="3" />
+      <rect x="200" y="195" width="25" height="35" rx="3" />
+      <rect x="245" y="200" width="35" height="25" rx="3" />
+
+      <rect x="100" y="255" width="45" height="20" rx="3" />
+      <rect x="160" y="250" width="25" height="35" rx="3" />
+      <rect x="200" y="260" width="35" height="20" rx="3" />
+      <rect x="250" y="255" width="40" height="30" rx="3" />
+      <rect x="300" y="260" width="20" height="40" rx="3" />
+
+      <rect x="110" y="295" width="30" height="25" rx="3" />
+      <rect x="160" y="300" width="45" height="20" rx="3" />
+      <rect x="220" y="295" width="30" height="25" rx="3" />
+      <rect x="265" y="305" width="45" height="15" rx="3" />
+    </g>
+
+    <!-- Center QRIS / DANA Emblem -->
+    <rect x="135" y="135" width="70" height="70" rx="16" fill="#ffffff" stroke="#118EEA" stroke-width="3" />
+    <g transform="translate(142, 142)">
+      <rect x="0" y="0" width="56" height="56" rx="12" fill="url(#danaGrad)" />
+      <!-- DANA 'D' Symbol -->
+      <path d="M 18 14 L 32 14 C 40 14 44 19 44 28 C 44 37 40 42 32 42 L 18 42 Z M 25 21 L 25 35 L 31 35 C 36 35 37 32 37 28 C 37 24 36 21 31 21 Z" fill="#ffffff" />
+    </g>
+  </g>
+
+  <!-- Instructions & Supporting Apps -->
+  <g transform="translate(60, 680)">
+    <text x="240" y="10" font-family="'Segoe UI', Roboto, sans-serif" font-weight="bold" font-size="14" fill="#1e293b" text-anchor="middle">
+      SATU QR UNTUK SEMUA PEMBAYARAN
+    </text>
+    <text x="240" y="30" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#64748b" text-anchor="middle">
+      Pindai dengan DANA, BCA Mobile, GoPay, OVO, ShopeePay, Mandiri Livin, BRImo, BNI, dll.
+    </text>
+
+    <!-- Bank / Wallet Logos Pill Badges -->
+    <g transform="translate(20, 48)">
+      <rect x="0" y="0" width="60" height="24" rx="6" fill="#118EEA" />
+      <text x="30" y="16" font-family="'Arial Black', sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">DANA</text>
+
+      <rect x="70" y="0" width="55" height="24" rx="6" fill="#0060AF" />
+      <text x="97" y="16" font-family="'Arial Black', sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">BCA</text>
+
+      <rect x="135" y="0" width="65" height="24" rx="6" fill="#0081A0" />
+      <text x="167" y="16" font-family="'Arial Black', sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">GOPAY</text>
+
+      <rect x="210" y="0" width="55" height="24" rx="6" fill="#4C2A86" />
+      <text x="237" y="16" font-family="'Arial Black', sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">OVO</text>
+
+      <rect x="275" y="0" width="75" height="24" rx="6" fill="#EE4D2D" />
+      <text x="312" y="16" font-family="'Arial Black', sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">SHOPEE</text>
+
+      <rect x="360" y="0" width="75" height="24" rx="6" fill="#003D79" />
+      <text x="397" y="16" font-family="'Arial Black', sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">MANDIRI</text>
+    </g>
+
+    <!-- Footer Security Notice -->
+    <text x="240" y="98" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#94a3b8" text-anchor="middle">
+      Penyelenggara Berlisensi Bank Indonesia • Terhubung Jaringan Pembayaran Nasional (GPN)
+    </text>
+  </g>
+</svg>
